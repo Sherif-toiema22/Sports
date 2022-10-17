@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    <bean id="mySport" class="com.IOC.basketball"/>
+
+</beans>
+
+
+
+
+
+<!--  <bean id="user" class="com.spring.di.User">
+    	<constructor-arg ref="person"></constructor-arg>
+	 </bean>
+	 <bean id="person" class="com.spring.di.Person">
+	 </bean>
+    <bean id="mySport" class="com.spring.Basketball">
+    </bean>
+    
+    <context:property-placeholder location="classpath:data.properties"/>
+    
+		<bean id="user" 
+		      class="com.spring.di.User"
+		      init-method="doStart" 
+		      destroy-method="doEnd">
+			<property name="person" ref="person"></property>
+			<property name="email" value="${us.email}"></property>
+			<property name="team" value="${us.team}"></property>
+	    </bean>
+	    
+	    <bean id="person" class="com.spring.di.Person">
+	 	</bean>
+	 	-->
+    <!--    
+    <context:component-scan base-package="com.spring.lifecycle"></context:component-scan>
+     -->
